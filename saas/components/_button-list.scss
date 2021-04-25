@@ -26,9 +26,16 @@
 }
 
 .button__list {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px;
+  }
 }
 
 .button__list .item + .item {

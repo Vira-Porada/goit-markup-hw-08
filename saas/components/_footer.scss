@@ -3,10 +3,14 @@
 }
 
 .footer-tablet {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1119px) {
     display: flex;
     justify-content: space-between;
   }
+
+  // @media screen and (min-width: 1200px) {
+  // display: inline-block;
+  // }
 }
 
 .footer-block {
