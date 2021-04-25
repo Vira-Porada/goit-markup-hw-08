@@ -1,0 +1,97 @@
+.section-benefit__title {
+  margin: 0px;
+  padding: 0px;
+}
+
+.benefit-list__title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-colour);
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.benefit-list {
+  // @media screen and (min-width: 480px) {
+  //   display: block;
+  // }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    margin-right: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    margin-right: -30px;
+  }
+}
+
+.benefit-list__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% / 2) - 30px);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+  }
+}
+
+.benefit-list__item::before {
+  display: flex;
+  background-size: contain;
+  // height: 120px;
+  // width: 270px;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 480px) {
+    height: 120px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 120px;
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 120px;
+    width: 270px;
+  }
+}
+
+.benefit-list__item:nth-child(1)::before {
+  background-image: url('../images/antenna.svg');
+}
+
+.benefit-list__item:nth-child(2)::before {
+  background-image: url('../images/clock.svg');
+}
+
+.benefit-list__item:nth-child(3)::before {
+  background-image: url('../images/diagram.svg');
+}
+.benefit-list__item:nth-child(4)::before {
+  background-image: url('../images/astronaut.svg');
+}

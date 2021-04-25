@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-width: 73px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-colour);
+  border-color: 1px solid transparent;
+  background-color: var(--light-bg-colour);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--ligth-text-colour);
+    background-color: var(--accent-colour);
+  }
+}
+
+.button__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.button__list .item + .item {
+  margin-left: 8px;
+}

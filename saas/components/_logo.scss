@@ -1,0 +1,30 @@
+.logo {
+  color: var(--title-colour);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.logo-textcolor {
+  color: var(--accent-colour);
+}
+
+.studio-textcolor {
+  color: var(--ligth-text-colour);
+}
+
+// .link-logo,
+// .site-nav {
+// display: flex;
+// }
+
+.link-logo {
+  align-items: center;
+  margin-right: 93px;
+}
