@@ -1,7 +1,7 @@
 .adress-block {
   display: inline-block;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-left: 124px;
     margin-right: 124px;
     margin-bottom: 60px;
