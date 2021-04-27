@@ -30,7 +30,9 @@
 
 .works__title {
   margin-bottom: 4px;
-  white-space: nowrap;
+  @media screen and (min-width: 1200px) {
+    white-space: nowrap;
+  }
 }
 
 .card__item {

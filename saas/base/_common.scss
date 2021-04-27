@@ -8,6 +8,13 @@ body {
   margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 2px solid red;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,15 +58,15 @@ p {
   padding-top: 94px;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+//   box-sizing: border-box;
+// }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }

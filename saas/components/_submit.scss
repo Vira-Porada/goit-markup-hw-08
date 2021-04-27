@@ -22,9 +22,11 @@
     background-color: #188ce8;
   }
 
+  @media screen and (min-width: 480px) {
+  }
+
   @media screen and (max-width: 1119px) {
     margin-top: 20px;
-    // margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
   }

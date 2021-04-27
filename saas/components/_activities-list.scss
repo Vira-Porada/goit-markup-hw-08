@@ -14,10 +14,14 @@
 
 .activities-list__item {
   position: relative;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 30px * 3) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+// .activities-list__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .activities-list__text {
   position: absolute;
