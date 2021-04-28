@@ -1,15 +1,23 @@
 .mobile-menu-btn {
   position: relative;
+  top: 0;
+  right: 0;
   z-index: 105;
   width: 40px;
   height: 40px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .mobile-menu-icon {
   width: 40px;
   height: 40px;
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-colour);
+  }
 }
 
 .icon-close {
