@@ -23,7 +23,6 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 a {
@@ -215,17 +214,17 @@ img {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (max-width: 767.98px) {
+  .auth-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .auth-nav {
     display: flex;
     margin-left: auto;
     align-items: center;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .auth-nav {
-    display: none;
   }
 }
 
@@ -306,7 +305,8 @@ img {
   text-transform: uppercase;
   color: var(--ligth-text-colour);
   margin: 0 auto 30px;
-  width: 696px;
+  max-width: 696px;
+  width: 100%;
 }
 
 .hero__button {
@@ -625,23 +625,21 @@ img {
   }
 }
 
-@media screen and (max-width: 767.98px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients-list__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 
-@media screen and (max-width: 767.98px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients-list__link {
     flex-wrap: nowrap;
-    width: 170px;
+    max-width: 170px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .clients-list__link:hover, .clients-list__link:focus {
-    border: 1px solid var(--accent-colour);
-  }
+.clients-list__link:hover, .clients-list__link:focus {
+  border: 1px solid var(--accent-colour);
 }
 
 .clients-list__link:hover .clients-list__icon,
@@ -700,8 +698,8 @@ img {
   .footer-block {
     display: flex;
     align-items: baseline;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
     flex-basis: calc((50%-45px) / 2);
   }
 }
@@ -896,15 +894,10 @@ img {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  .subscribe__input {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .subscribe__input {
     width: 450px;
   }
@@ -1100,6 +1093,7 @@ img {
   padding: 40px 48px 83px;
   background: #ffffff;
   transition: right 0.5s;
+  overflow-y: scroll;
 }
 
 .mobile-menu.is-open {
@@ -1270,9 +1264,12 @@ img {
   background-color: var(--accent-colour);
 }
 
-@media screen and (min-width: 480px) {
+.button__list {
+  display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
   .button__list {
-    display: flex;
     flex-wrap: wrap;
   }
 }

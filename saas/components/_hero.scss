@@ -22,7 +22,8 @@
   text-transform: uppercase;
   color: var(--ligth-text-colour);
   margin: 0 auto 30px;
-  width: 696px;
+  max-width: 696px;
+  width: 100%;
 }
 
 .hero__button {

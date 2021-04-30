@@ -26,8 +26,9 @@
 }
 
 .button__list {
-  @media screen and (min-width: 480px) {
-    display: flex;
+  display: flex;
+
+  @media screen and (max-width: 767.98px) {
     flex-wrap: wrap;
   }
 

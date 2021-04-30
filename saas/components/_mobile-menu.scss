@@ -49,6 +49,7 @@
   padding: 40px 48px 83px;
   background: #ffffff;
   transition: right 0.5s;
+  overflow-y: scroll;
 
   &.is-open {
     right: 0;
