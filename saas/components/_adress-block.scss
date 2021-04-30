@@ -1,11 +1,14 @@
 .adress-block {
-  display: inline-block;
+  display: block;
 
   @media screen and (max-width: 767px) {
-    margin-left: 124px;
-    margin-right: 124px;
+    // margin-left: 124px;
+    // margin-right: 124px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 60px;
-    white-space: nowrap;
+    align-content: center;
+    // white-space: nowrap;
     text-align: center;
   }
 
