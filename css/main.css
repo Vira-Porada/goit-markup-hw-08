@@ -23,6 +23,7 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 a {
@@ -64,9 +65,18 @@ p {
   margin: 0px;
 }
 
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+@media screen and (max-width: 1119.98px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 img {
@@ -287,13 +297,43 @@ img {
 
 .hero {
   background-color: var(--dark-bg-colour);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg"), url("../images/mobile/Header_mobile1x.jpg");
   background-repeat: no-repeat;
   max-width: 1600px;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/mobile/Header_mobile2x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: url("../images/tablet/Header_tablet1x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/tablet/Header_tablet2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/desktop/hero_desktop1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/desktop/hero_desktop2x.jpg");
+  }
 }
 
 .hero__title {
@@ -861,9 +901,9 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .subscribe__items {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -882,7 +922,6 @@ img {
 
 .subscribe__input {
   display: block;
-  width: 358px;
   height: 50px;
   margin-right: 12px;
   padding: 16px;
@@ -890,12 +929,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 100%;
-}
-
-@media screen and (max-width: 767.98px) {
-  .subscribe__input {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1302,6 +1335,12 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .works__item {
+    margin-bottom: 30px;
   }
 }
 
