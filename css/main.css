@@ -23,6 +23,7 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 a {
@@ -296,43 +297,43 @@ img {
 
 .hero {
   background-color: var(--dark-bg-colour);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg"), url("../images/mobile/hero_mobile1x.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg"), url("./../images/mobile/hero_mobile1x.jpg");
   background-repeat: no-repeat;
-  width: 1600px;
+  background-position: top;
+  max-width: 1600px;
   width: 100%;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   overflow: hidden;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/mobile/hero_mobile2x.jpg");
+    background-image: url("./../images/mobile/hero_mobile2x.jpg");
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: url("../images/tablet/hero_tablet1x.jpg");
+    background-image: url("./../images/tablet/hero_tablet1x.jpg");
   }
 }
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/tablet/hero_tablet2x.jpg");
+    background-image: url("./../images/tablet/hero_tablet2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/desktop/hero_desktop1x.jpg");
+    background-image: url("./../images/desktop/hero_desktop1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/desktop/hero_desktop2x.jpg");
+    background-image: url("./../images/desktop/hero_desktop2x.jpg");
   }
 }
 
