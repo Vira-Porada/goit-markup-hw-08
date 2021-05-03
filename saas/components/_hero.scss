@@ -4,38 +4,49 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/hero.jpg'), url('../images/mobile/Header_mobile1x.jpg');
+    url('../images/hero.jpg'), url('../images/mobile/hero_mobile1x.jpg');
   background-repeat: no-repeat;
-  max-width: 1600px;
+  width: 1600px;
+  width: 100%;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
+}
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/Header_mobile2x.jpg');
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/mobile/hero_mobile2x.jpg');
   }
+}
 
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/tablet/Header_tablet1x.jpg');
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/tablet/Header_tablet2x.jpg');
-    }
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: url('../images/tablet/hero_tablet1x.jpg');
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/tablet/hero_tablet2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
     background-image: url('../images/desktop/hero_desktop1x.jpg');
+  }
+}
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/desktop/hero_desktop2x.jpg');
-    }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/desktop/hero_desktop2x.jpg');
   }
 }
 
