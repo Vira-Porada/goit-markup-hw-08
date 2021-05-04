@@ -1162,6 +1162,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.auth-nav--mobile__item:first-child {
+  font-size: 34px;
+}
+
 .auth-nav--mobile__item {
   margin-bottom: 32px;
 }
@@ -1351,13 +1355,16 @@ img {
 @media screen and (max-width: 767.98px) {
   .works__item {
     margin-bottom: 30px;
+    border: 1px solid #eeeeee;
   }
 }
 
 @media screen and (min-width: 768px) {
   .works__item {
+    display: flex;
     flex-basis: calc(100% / 2 - 30px);
     margin-bottom: 30px;
+    border: 1px solid #eeeeee;
   }
 }
 
@@ -1382,7 +1389,6 @@ img {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #eeeeee;
   background-color: var(--background-colour);
 }
 
