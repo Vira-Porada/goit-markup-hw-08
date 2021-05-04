@@ -298,6 +298,7 @@ img {
   background-color: var(--dark-bg-colour);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/mobile/hero_mobile1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top;
   max-width: 1600px;
   width: 100%;
@@ -1342,7 +1343,7 @@ img {
   .works__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: -30px;
   }
 }
